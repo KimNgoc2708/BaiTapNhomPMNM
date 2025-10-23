@@ -1,0 +1,32 @@
+run: main.o bai3.o bai4.o bai5.o bai6.o bai7.o bai8.o bai9.o bai10.o
+ gcc main.o bai3.o bai4.o bai5.o bai6.o bai7.o bai8.o bai9.o bai10.o -o run
+
+main.o: main.c mylib.h
+ gcc -c main.c
+
+bai3.o: bai3.c mylib.h
+ gcc -c bai3.c
+
+bai4.o: bai4.c mylib.h
+ gcc -c bai4.c
+
+bai5.o: bai5.c mylib.h
+ gcc -c bai5.c
+
+bai6.o: bai6.c mylib.h
+ gcc -c bai6.c
+
+bai7.o: bai7.c mylib.h
+ gcc -c bai7.c
+
+bai8.o: bai8.c mylib.h
+ gcc -c bai8.c
+
+bai9.o: bai9.c mylib.h
+ gcc -c bai9.c
+
+bai10.o: bai10.c mylib.h
+ gcc -c bai10.c
+
+clean:
+ rm -f *.o run
