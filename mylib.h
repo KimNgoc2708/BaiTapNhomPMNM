@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-void namNhuan();
 void giaiPTBacHai();
 void diemTB();
 void tienDien();
